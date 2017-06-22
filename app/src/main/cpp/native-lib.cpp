@@ -83,7 +83,7 @@ bool sign_sha1_verify(JNIEnv *env, jclass clz, jobject context_object) {
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_luoruiyi_keysosafe_ApiKeyGeneractor_keyFromJNI(JNIEnv *env, jclass type, jobject context) {
+Java_com_haoshiditu_keysosafe_ApiKeyGeneractor_keyFromJNI(JNIEnv *env, jclass type, jobject context) {
 
     if (sign_sha1_verify(env, type, context)) {
         // 只有个别有用，花指令，加大破解难度
