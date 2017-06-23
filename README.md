@@ -7,8 +7,8 @@
 1. src/main/cpp/native-lib.cpp 里的 const char *app_signature 需要设置为
 app 的签名，具体方法见源文件注释。
 2. 当前 sign_sha1_verify 必定返回false，设置后返回true，既验证正确。
-3. 当更改包结构失衡，要注意 ApiKeyGeneractor 里 keyFromJNI 对应cpp文件里的
-函数名，需要重新生成。
+3. 当更改包结构时，要注意 ApiKeyGeneractor 里 keyFromJNI 对应 cpp文件里的
+函数名，该函数需要重新生成。
 
 #### 安全说明
 以上只是最简单的措施，只是增加了破解代价，并非安全
